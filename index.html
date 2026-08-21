@@ -24,13 +24,10 @@
       height: 90px;
       background: #ff1a0a;
       color: white;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       gap: 18px;
-
       font-size: 34px;
       font-weight: 700;
     }
@@ -45,11 +42,8 @@
       width: 100%;
       max-width: 1050px;
       margin: 0 auto;
-
       background: white;
-
       min-height: 100vh;
-
       padding: 45px 25px 70px;
     }
 
@@ -58,27 +52,15 @@
       width: 75%;
       max-width: 700px;
       height: 330px;
-
       margin: 0 auto 45px;
-
-      background: linear-gradient(
-        135deg,
-        #ff2b16,
-        #e91508
-      );
-
+      background: linear-gradient(135deg, #ff2b16, #e91508);
       border-radius: 22px;
-
       position: relative;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       overflow: hidden;
-
-      box-shadow:
-        0 8px 20px rgba(0,0,0,.15);
+      box-shadow: 0 8px 20px rgba(0,0,0,.15);
     }
 
     .reward-logo {
@@ -99,9 +81,7 @@
       position: absolute;
       top: 20px;
       right: 28px;
-
       color: white;
-
       font-size: 48px;
       font-weight: bold;
     }
@@ -109,10 +89,8 @@
     /* HEADLINE */
     h1 {
       text-align: center;
-
       font-size: 52px;
       line-height: 1.1;
-
       margin-bottom: 25px;
     }
 
@@ -123,13 +101,9 @@
     /* DESCRIPTION */
     .description {
       max-width: 700px;
-
       margin: 0 auto 35px;
-
       text-align: center;
-
       color: #555;
-
       font-size: 22px;
       line-height: 1.5;
     }
@@ -140,26 +114,15 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-
       width: 470px;
       max-width: 90%;
-
       margin: 0 auto 55px;
-
       padding: 22px;
-
-      border: none;
       border-radius: 10px;
-
       background: #ff1a0a;
-
       color: white;
-
       font-size: 24px;
       font-weight: bold;
-
-      cursor: pointer;
-
       transition: 0.2s;
     }
 
@@ -172,359 +135,199 @@
     .divider {
       height: 1px;
       background: #ddd;
-
-      margin-bottom: 35px;
+      margin-bottom: 50px;
     }
 
-    /* PROCESS */
+    /* PROCESS SECTION (1:1 MATCH WITH IMG_4388.JPEG) */
     .process-title {
       text-align: center;
+      font-size: 38px;
+      font-weight: 700;
+      margin-bottom: 50px;
+    }
 
-      font-size: 34px;
+    .steps-container {
+      position: relative;
+      max-width: 950px;
+      margin: 0 auto;
+    }
 
-      margin-bottom: 35px;
+    /* DASHED LINE BEHIND NUMBERS */
+    .dashed-line {
+      position: absolute;
+      top: 28px;
+      left: 15%;
+      right: 15%;
+      height: 2px;
+      border-top: 2px dashed #ccc;
+      z-index: 1;
     }
 
     .steps {
       display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap: 35px;
-    }
-
-    /* STEP WRAPPER */
-    .step-wrapper {
-      position: relative;
-
-      text-align: center;
-    }
-
-    /* NUMBER */
-    .number {
-      width: 58px;
-      height: 58px;
-
-      margin: 0 auto -1px;
-
-      border-radius: 50%;
-
-      background: #ed1c12;
-
-      color: white;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      font-size: 25px;
-      font-weight: bold;
-
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
       position: relative;
       z-index: 2;
     }
 
-    /* STEP CARD */
-    .step {
-      min-height: 330px;
-
-      border: 1px solid #ddd;
-
-      border-radius: 16px;
-
-      padding: 70px 25px 25px;
-
-      margin-top: -2px;
+    .step-wrapper {
+      text-align: center;
     }
 
-    /* ICON */
-    .icon {
-      font-size: 60px;
+    .number {
+      width: 58px;
+      height: 58px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      background: #ed1c12;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 25px;
+      font-weight: bold;
+      border: 4px solid white; /* Essential to break the dashed line */
+    }
 
+    .step-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 20px;
+      padding: 40px 15px 30px;
+      background: white;
+      min-height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .step-icon {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 20px;
+    }
+
+    .step-icon svg {
+      width: 100%;
+      height: 100%;
+      fill: #ed1c12;
+    }
+
+    .step-card h3 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #111;
+    }
+
+    .step-card strong {
+      display: block;
+      color: #ed1c12;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 1.2;
       margin-bottom: 15px;
     }
 
-    /* STEP TITLE */
-    .step h3 {
-      font-size: 23px;
-
-      margin-bottom: 12px;
-    }
-
-    /* STEP RED TEXT */
-    .step strong {
-      display: block;
-
-      color: #ed1c12;
-
-      font-size: 20px;
-
-      line-height: 1.3;
-
-      margin-bottom: 12px;
-    }
-
-    /* STEP DESCRIPTION */
-    .step p {
-      color: #666;
-
-      font-size: 17px;
-
-      line-height: 1.5;
+    .step-card p {
+      color: #555;
+      font-size: 18px;
+      line-height: 1.4;
+      max-width: 250px;
     }
 
     /* MOBILE FIXES */
     @media (max-width: 750px) {
-
-      header {
-        height: 70px;
-
-        font-size: 23px;
-
-        gap: 10px;
-      }
-
-      .logo {
-        font-size: 38px;
-      }
-
-      .page {
-        padding: 30px 15px;
-      }
-
-      .reward-card {
-        width: 100%;
-        max-width: 350px;
-        height: 200px;
-        margin-bottom: 30px;
-        border-radius: 15px;
-      }
-
-      .reward-logo {
-        font-size: 50px;
-      }
-
-      .reward-name {
-        font-size: 24px;
-        margin-left: 10px;
-      }
-
-      .reward-amount {
-        font-size: 32px;
-        top: 12px;
-        right: 18px;
-      }
-
-      h1 {
-        font-size: 36px;
-      }
-
-      .description {
-        font-size: 18px;
-      }
-
-      .process-title {
-        font-size: 28px;
-      }
-
-      .steps {
-        grid-template-columns: 1fr;
-      }
-
-      .step {
-        min-height: auto;
-      }
+      header { height: 70px; font-size: 23px; }
+      .logo { font-size: 38px; }
+      .page { padding: 30px 15px; }
+      .reward-card { width: 100%; max-width: 350px; height: 200px; }
+      .reward-logo { font-size: 50px; }
+      .reward-name { font-size: 24px; }
+      .reward-amount { font-size: 32px; }
+      h1 { font-size: 36px; }
+      .description { font-size: 18px; }
+      .dashed-line { display: none; }
+      .steps { grid-template-columns: 1fr; gap: 40px; }
+      .step-card { min-height: auto; }
     }
   </style>
 </head>
 
 <body>
 
-  <!-- HEADER -->
   <header>
-
-    <div class="logo">
-      ➤
-    </div>
-
-    <div>
-      DoorDash Survey
-    </div>
-
+    <div class="logo">➤</div>
+    <div>DoorDash Survey</div>
   </header>
 
-
-  <!-- MAIN CONTENT -->
   <main class="page">
 
-
-    <!-- REWARD CARD -->
     <div class="reward-card">
-
-      <div class="reward-logo">
-        ➤
-      </div>
-
-      <div class="reward-name">
-        DOORDASH
-      </div>
-
-      <div class="reward-amount">
-        $500
-      </div>
-
+      <div class="reward-logo">➤</div>
+      <div class="reward-name">DOORDASH</div>
+      <div class="reward-amount">$500</div>
     </div>
 
+    <h1>Get a <span class="red">$500</span><br><span class="red">DoorDash</span> Gift Card</h1>
 
-    <!-- HEADLINE -->
-    <h1>
-
-      Get a
-      <span class="red">$500</span>
-
-      <br>
-
-      <span class="red">
-        DoorDash
-      </span>
-
-      Gift Card
-
-    </h1>
-
-
-    <!-- DESCRIPTION -->
     <p class="description">
-
-      Complete a short survey about your
-      DoorDash experience to see whether
-      you qualify for the advertised reward.
-
+      Complete a short survey about your DoorDash experience to see whether you qualify for the advertised reward.
     </p>
 
-
-    <!-- BUTTON -->
-    <a
-      href="https://trksy.org/aff_c?offer_id=455&aff_id=191194"
-      class="cta"
-    >
+    <a href="https://trksy.org/aff_c?offer_id=455&aff_id=191194" class="cta">
       Start Survey Now →
     </a>
 
-
-    <!-- DIVIDER -->
     <div class="divider"></div>
 
+    <!-- 1:1 MATCH WITH IMG_4388.JPEG -->
+    <h2 class="process-title">Simple 3-Step Process</h2>
 
-    <!-- THREE STEP PROCESS -->
-    <h2 class="process-title">
-
-      Simple 3-Step Process
-
-    </h2>
-
-
-    <div class="steps">
-
-
-      <!-- STEP 1 -->
-      <div class="step-wrapper">
-
-        <div class="number">
-          1
-        </div>
-
-        <div class="step">
-
-          <div class="icon">
-            📋
+    <div class="steps-container">
+      <div class="dashed-line"></div>
+      
+      <div class="steps">
+        <!-- STEP 1 -->
+        <div class="step-wrapper">
+          <div class="number">1</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24"><path d="M19,3H14.82C14.4,1.84 13.3,1 12,1C10.7,1 9.6,1.84 9.18,3H5A2,2 0 0,0 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M12,3A1,1 0 0,1 13,4A1,1 0 0,1 12,5A1,1 0 0,1 11,4A1,1 0 0,1 12,3M7,7H17V5H19V19H5V5H7V7M12,17L17,12L15.59,10.59L12,14.17L10.41,12.58L9,14L12,17Z"/></svg>
+            </div>
+            <h3>Step 1</h3>
+            <strong>Complete a<br>simple questionnaire</strong>
+            <p>Answer a few quick questions about your recent DoorDash experience.</p>
           </div>
-
-          <h3>
-            Step 1
-          </h3>
-
-          <strong>
-            Complete a<br>
-            simple questionnaire
-          </strong>
-
-          <p>
-            Answer a few quick questions
-            about your recent experience.
-          </p>
-
         </div>
 
-      </div>
-
-
-      <!-- STEP 2 -->
-      <div class="step-wrapper">
-
-        <div class="number">
-          2
-        </div>
-
-        <div class="step">
-
-          <div class="icon">
-            👤
+        <!-- STEP 2 -->
+        <div class="step-wrapper">
+          <div class="number">2</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12C20,14.33 19.03,16.44 17.45,17.93C16.83,16.21 14.54,15 12,15C9.46,15 7.17,16.21 6.55,17.93C4.97,16.44 4,14.33 4,12A8,8 0 0,1 12,4M12,6A3.5,3.5 0 0,0 8.5,9.5A3.5,3.5 0 0,0 12,13A3.5,3.5 0 0,0 15.5,9.5A3.5,3.5 0 0,0 12,6Z"/></svg>
+            </div>
+            <h3>Step 2</h3>
+            <strong>Enter your<br>basic details</strong>
+            <p>Provide your basic information to continue.</p>
           </div>
-
-          <h3>
-            Step 2
-          </h3>
-
-          <strong>
-            Enter your<br>
-            basic details
-          </strong>
-
-          <p>
-            Continue to the participating
-            survey provider.
-          </p>
-
         </div>
 
-      </div>
-
-
-      <!-- STEP 3 -->
-      <div class="step-wrapper">
-
-        <div class="number">
-          3
-        </div>
-
-        <div class="step">
-
-          <div class="icon">
-            🎁
+        <!-- STEP 3 -->
+        <div class="step-wrapper">
+          <div class="number">3</div>
+          <div class="step-card">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24"><path d="M22,12V20A2,2 0 0,1 20,22H4A2,2 0 0,1 2,20V12A1,1 0 0,1 1,11V8A2,2 0 0,1 3,6H6.17C6.06,5.69 6,5.35 6,5A3,3 0 0,1 9,2C10.12,2 11.1,2.62 11.62,3.54L12,4.27L12.38,3.54C12.9,2.62 13.88,2 15,2A3,3 0 0,1 18,5C18,5.35 17.94,5.69 17.83,6H21A2,2 0 0,1 23,8V11A1,1 0 0,1 22,12M4,20H11V12H4V20M20,20V12H13V20H20M9,4A1,1 0 0,0 8,5A1,1 0 0,0 9,6H11.58L10.74,5.15C10.45,4.45 9.79,4 9,4M15,4C14.21,4 13.55,4.45 13.26,5.15L12.42,6H15A1,1 0 0,0 16,5A1,1 0 0,0 15,4M3,8V10H21V8H3Z"/></svg>
+            </div>
+            <h3>Step 3</h3>
+            <strong>Get rewarded</strong>
+            <p>Qualify and receive your $500 DoorDash gift card.</p>
           </div>
-
-          <h3>
-            Step 3
-          </h3>
-
-          <strong>
-            Get rewarded
-          </strong>
-
-          <p>
-            Reward eligibility depends on
-            the participating offer's terms.
-          </p>
-
         </div>
-
       </div>
-
-
     </div>
-
 
   </main>
 
