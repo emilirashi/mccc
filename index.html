@@ -25,28 +25,25 @@
       color: white;
       text-align: center;
       padding: 9px 12px;
-      font-size: 13px;
+      font-size: 11px;
       font-weight: bold;
     }
 
     /* HEADER */
     header {
-      height: 90px;
+      height: 80px;
       background: #ff1a0a;
       color: white;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
-      gap: 18px;
-
-      font-size: 34px;
+      gap: 12px;
+      font-size: 28px;
       font-weight: 700;
     }
 
     .logo {
-      font-size: 58px;
+      font-size: 45px;
       font-weight: 900;
     }
 
@@ -55,75 +52,57 @@
       width: 100%;
       max-width: 1050px;
       margin: 0 auto;
-
       background: white;
-
       min-height: 100vh;
-
-      padding: 45px 25px 70px;
+      padding: 40px 20px 70px;
     }
 
-    /* REWARD CARD */
+    /* REWARD CARD - FIXED FOR MOBILE */
     .reward-card {
-      width: 75%;
-      max-width: 700px;
-      height: 330px;
-
-      margin: 0 auto 45px;
-
-      background: linear-gradient(
-        135deg,
-        #ff2b16,
-        #e91508
-      );
-
-      border-radius: 22px;
-
+      width: 100%;
+      max-width: 600px;
+      height: 280px;
+      margin: 0 auto 40px;
+      background: linear-gradient(135deg, #ff2b16, #e91508);
+      border-radius: 20px;
       position: relative;
-
       display: flex;
       align-items: center;
       justify-content: center;
-
       overflow: hidden;
-
-      box-shadow:
-        0 8px 20px rgba(0,0,0,.15);
+      box-shadow: 0 8px 25px rgba(0,0,0,.15);
     }
 
     .reward-logo {
       color: white;
-      font-size: 95px;
+      font-size: 80px;
       font-weight: 900;
     }
 
     .reward-name {
       color: white;
-      font-size: 48px;
-      font-weight: bold;
-      letter-spacing: 3px;
-      margin-left: 25px;
+      font-size: 40px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-left: 15px;
     }
 
     .reward-amount {
       position: absolute;
       top: 20px;
-      right: 28px;
-
+      right: 25px;
       color: white;
-
-      font-size: 48px;
-      font-weight: bold;
+      font-size: 45px;
+      font-weight: 900;
     }
 
     /* HEADLINE */
     h1 {
       text-align: center;
-
-      font-size: 52px;
+      font-size: 42px;
       line-height: 1.1;
-
-      margin-bottom: 25px;
+      margin-bottom: 20px;
+      font-weight: 900;
     }
 
     .red {
@@ -132,15 +111,11 @@
 
     /* DESCRIPTION */
     .description {
-      max-width: 700px;
-
-      margin: 0 auto 35px;
-
+      max-width: 650px;
+      margin: 0 auto 30px;
       text-align: center;
-
-      color: #555;
-
-      font-size: 22px;
+      color: #444;
+      font-size: 20px;
       line-height: 1.5;
     }
 
@@ -150,62 +125,48 @@
       align-items: center;
       justify-content: center;
       text-decoration: none;
-
-      width: 470px;
-      max-width: 90%;
-
-      margin: 0 auto 55px;
-
-      padding: 22px;
-
-      border: none;
-      border-radius: 10px;
-
+      width: 400px;
+      max-width: 100%;
+      margin: 0 auto 50px;
+      padding: 20px;
+      border-radius: 12px;
       background: #ff1a0a;
-
       color: white;
-
-      font-size: 24px;
-      font-weight: bold;
-
-      cursor: pointer;
-
+      font-size: 22px;
+      font-weight: 800;
       transition: 0.2s;
     }
 
     .cta:hover {
       background: #d91408;
-      transform: translateY(-2px);
+      transform: scale(1.02);
     }
 
-    /* DIVIDER */
     .divider {
       height: 1px;
-      background: #ddd;
-
-      margin-bottom: 35px;
+      background: #eee;
+      margin-bottom: 40px;
     }
 
     /* PROCESS SECTION */
     .process-title {
       text-align: center;
-      font-size: 34px;
+      font-size: 32px;
       font-weight: 800;
-      margin-bottom: 45px;
+      margin-bottom: 40px;
     }
 
     .steps-container {
       position: relative;
-      max-width: 900px;
+      max-width: 950px;
       margin: 0 auto;
     }
 
-    /* DASHED LINE */
     .dashed-line {
       position: absolute;
-      top: 29px;
-      left: 10%;
-      right: 10%;
+      top: 28px;
+      left: 15%;
+      right: 15%;
       height: 2px;
       border-top: 2px dashed #ccc;
       z-index: 1;
@@ -214,7 +175,7 @@
     .steps {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
+      gap: 20px;
       position: relative;
       z-index: 2;
     }
@@ -224,38 +185,35 @@
     }
 
     .number {
-      width: 58px;
-      height: 58px;
-      margin: 0 auto 20px;
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 15px;
       border-radius: 50%;
       background: #ed1c12;
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 25px;
-      font-weight: bold;
-      border: 4px solid white; /* Adds space around number for the dashed line */
+      font-size: 24px;
+      font-weight: 800;
+      border: 4px solid white;
     }
 
     .step-card {
-      border: 1px solid #e0e0e0;
-      border-radius: 20px;
-      padding: 35px 20px;
+      border: 1px solid #e5e5e5;
+      border-radius: 18px;
+      padding: 30px 15px;
       background: white;
-      min-height: 340px;
+      min-height: 320px;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     .step-icon {
-      width: 80px;
-      height: 80px;
-      margin-bottom: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 15px;
     }
 
     .step-icon svg {
@@ -265,42 +223,60 @@
     }
 
     .step-card h3 {
-      font-size: 24px;
+      font-size: 22px;
       font-weight: 800;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     .step-card strong {
       display: block;
       color: #ed1c12;
-      font-size: 19px;
+      font-size: 18px;
       font-weight: 700;
       line-height: 1.2;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
 
     .step-card p {
-      color: #555;
-      font-size: 17px;
+      color: #666;
+      font-size: 16px;
       line-height: 1.4;
     }
 
-    /* FOOTER */
     footer {
       text-align: center;
-      color: #777;
-      font-size: 13px;
-      margin-top: 45px;
-      line-height: 1.5;
+      color: #888;
+      font-size: 12px;
+      margin-top: 50px;
+      padding-bottom: 30px;
     }
 
-    /* MOBILE */
-    @media (max-width: 750px) {
+    /* MOBILE FIXES */
+    @media (max-width: 600px) {
+      header {
+        height: 60px;
+        font-size: 20px;
+      }
+      .logo { font-size: 32px; }
+      
+      .page { padding: 25px 15px; }
+
+      .reward-card {
+        height: 180px; /* Fixed height for mobile */
+        margin-bottom: 30px;
+      }
+      .reward-logo { font-size: 45px; }
+      .reward-name { font-size: 22px; margin-left: 10px; }
+      .reward-amount { font-size: 32px; top: 12px; right: 15px; }
+
+      h1 { font-size: 32px; }
+      .description { font-size: 17px; }
+      .cta { font-size: 19px; padding: 18px; }
+
       .dashed-line { display: none; }
-      .steps { grid-template-columns: 1fr; }
-      .step-card { min-height: auto; }
-      header { height: 70px; font-size: 23px; }
-      h1 { font-size: 36px; }
+      .steps { grid-template-columns: 1fr; gap: 30px; }
+      .step-card { min-height: auto; padding: 25px 20px; }
+      .process-title { font-size: 26px; }
     }
   </style>
 </head>
@@ -318,6 +294,7 @@
 
   <main class="page">
 
+    <!-- REWARD CARD -->
     <div class="reward-card">
       <div class="reward-logo">➤</div>
       <div class="reward-name">DOORDASH</div>
